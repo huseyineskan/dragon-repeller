@@ -11,7 +11,6 @@ I've learned how to work with arrays, strings, objects, functions, loops, if/els
  - You can se the monster's name and health status.
  - Before fighting the dragon, you can do some training in the cave and upgrade your weapons.
  - Easter eggs have been added and you can get lucky and earn points.
- - 
 
  ## How to play?
  - You can start by going to the store and purchasing 20 health and 1 weapon.
