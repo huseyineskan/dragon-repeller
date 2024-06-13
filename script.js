@@ -90,6 +90,14 @@ const locations = [
   }
 ];
 
+// Settings
+const settingsButton = document.querySelector("#settingsButton");
+const popUp = document.querySelector("#popUp");
+const popUpClose = document.querySelector("#popUpClose");
+const healthInput = document.querySelector("#healthInput");
+const goldInput = document.querySelector("#goldInput");
+const popUpSaveButton = document.querySelector("#popUpSaveButton");
+
 // initialize buttons
 button1.onclick = goStore;
 button2.onclick = goCave;
@@ -242,8 +250,8 @@ function winGame() {
 
 function restart() {
   xp = 0;
-  health = 100;
-  gold = 50;
+  health = Number(healthInput.value);
+  gold = Number(goldInput.value);
   currentWeapon = 0;
   inventory = ["stick"];
   goldText.innerText = gold;
@@ -285,4 +293,23 @@ function pick(guess) {
       lose();
     }
   }
+}
+
+// PopUp and Settings
+settingsButton.onclick = openPopUp;
+popUpClose.onclick = openPopUp;
+popUpSaveButton.onclick = updateValues;
+
+function openPopUp(){
+  popUp.classList.toggle('popUpOpen');
+}
+
+function updateValues(){
+  health= Number(healthInput.value);
+  gold = Number(goldInput.value);
+
+  healthText.innerText = health;
+  goldText.innerText = gold;
+
+  openPopUp();
 }

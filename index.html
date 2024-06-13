@@ -16,6 +16,7 @@
         <button id="button1">Go to store</button>
         <button id="button2">Go to cave</button>
         <button id="button3">Fight dragon</button>
+        <button id="settingsButton" title="Settings">&#x2699;</button>
       </div>
       <div id="monsterStats">
         <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
@@ -23,6 +24,21 @@
       </div>
       <div id="text">
         Welcome to Dragon Repeller. You must defeat the dragon that is preventing people from leaving the town. You are in the town square. Where do you want to go? Use the buttons above.
+      </div>
+    </div>
+    <div id="popUp">
+      <div id="popUpBox">
+        <div id="popUpClose">&#x2715;</div>
+        <p>Please enter the health and gold value.</p>
+        <div class="popUpInputs">
+          <label for="healthInput">Health
+            <input type="number" name="healthInput" id="healthInput" value="100">
+          </label>
+          <label for="goldInput">Gold
+            <input type="number" name="goldInput" id="goldInput" value="50">
+          </label>
+        </div>
+        <button id="popUpSaveButton">Save values</button>
       </div>
     </div>
     <script src="./script.js"></script>

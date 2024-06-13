@@ -16,3 +16,6 @@ I've learned how to work with arrays, strings, objects, functions, loops, if/els
  - You can start by going to the store and purchasing 20 health and 1 weapon.
  - Go to the cave and practice with a lower level monster, increasing its gold and health.
  - After your health and gold increase, you can buy stronger weapons and fight the dragon.
+
+## Update (13/06/2024)
+- People will be able to enter their own health and gold values ​​in the settings section.
